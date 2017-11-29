@@ -27,9 +27,12 @@ public class MenuActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        setTitle("Menu principal: ");
         String mail = getIntent().getStringExtra("usermail");
         usermail = (TextView) findViewById(R.id.tv_mail);
         usermail.setText(mail);
+        name = (TextView) findViewById(R.id.tv_name);
+        name.setText("Encuentra los mejores hoteles con esta aplicación");
     }
 
     public void onButtonClick(View view)

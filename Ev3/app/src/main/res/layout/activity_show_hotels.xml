@@ -5,21 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="217dp"
-        android:text="Aqui se debe de mostrar el recyce¿le view de los hoteles"
-        android:id="@+id/textView4" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        android:text="Si se le da click a uno debe desplegar los datos en act_hotel_info" />
+        <ListView
+            android:id="@+id/hotelList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+
+    </LinearLayout>
 </RelativeLayout>

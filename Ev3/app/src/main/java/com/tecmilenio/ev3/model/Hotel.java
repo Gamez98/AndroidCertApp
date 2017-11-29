@@ -19,6 +19,24 @@ public class Hotel
     public String free_rooms;
     public String room_cost;
 
+    public Hotel(int id, String name, String stars, String mail, String phone, String country, String state, String city, String rooms, String free_rooms, String room_cost) {
+        this.id = id;
+        this.name = name;
+        this.stars = stars;
+        this.mail = mail;
+        this.phone = phone;
+        this.country = country;
+        this.state = state;
+        this.city = city;
+        this.rooms = rooms;
+        this.free_rooms = free_rooms;
+        this.room_cost = room_cost;
+    }
+
+    public Hotel(){
+
+    }
+
     public int getId() {
         return id;
     }

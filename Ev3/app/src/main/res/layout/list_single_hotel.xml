@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Row 1 with single column -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/nameHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:padding="18dip"
+            android:text="Nombre de hotel"
+            android:textColor="#000"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/starsHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estrellas del hotel"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+
+    </TableRow>
+
+    <!-- Row 2 with 3 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <TextView
+            android:id="@+id/ciudadHotel"
+            android:layout_weight="1"
+            android:padding="20dip"
+            android:text="ciudad"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/freeromsHotel"
+            android:layout_weight="1"
+            android:padding="20dip"
+            android:text="freeroms"
+            android:textColor="#000000" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/costHotel"
+            android:layout_weight="1"
+            android:padding="20dip"
+            android:text="costo"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/reservar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservar"
+            tools:text="Reservar" />
+
+
+    </TableRow>
+</TableLayout>
