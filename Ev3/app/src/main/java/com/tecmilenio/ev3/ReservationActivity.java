@@ -24,6 +24,12 @@ public class ReservationActivity extends AppCompatActivity {
 
     }
 
+    public static void clearHotelReserva(){
+        hotelesReservadosList.clear();
+
+    }
+
+
 
     /**
      * Para actualizar la lista de mensajes cada que publicas uno!!

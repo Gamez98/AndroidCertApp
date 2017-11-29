@@ -11,6 +11,8 @@ import android.widget.Toast;
 import com.tecmilenio.ev3.model.User;
 import com.tecmilenio.ev3.sql.DBHelper;
 
+import static com.tecmilenio.ev3.ReservationActivity.clearHotelReserva;
+
 public class MainActivity extends AppCompatActivity
 {
 
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity
             {
                 Intent i = new Intent(this, MenuActivity.class);
                 i.putExtra("usermail", _correo);
+                clearHotelReserva();
                 startActivity(i);
                 Toast.makeText(this , "Log In" , Toast.LENGTH_LONG).show();
             }
